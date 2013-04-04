@@ -1,0 +1,34 @@
+{
+  "name": "simple-protected-site",
+  "version": "0.0.1",
+  "description": "A simple HTTP/S server that serves a static site, but requires HTTP Basic authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dlkinney/simple-protected-site.git"
+  },
+  "keywords": [
+    "http",
+    "https",
+    "static",
+    "web",
+    "authentication",
+    "basic",
+    "protected"
+  ],
+  "author": "David L Kinney <dkinney@redpointtech.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": "0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "connect": "2.7.x"
+  },
+  "devDependencies": {}
+}
