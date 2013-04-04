@@ -10,7 +10,7 @@ var password = process.env.SPS_PASSWORD || 'letmein';
 
 var _passThrough = function(req, res, next) { next(); };
 var _forceSSL = function(req, res, next) {
-  if ('https' == req.req.headers['x-forwarded-proto']) {
+  if ('https' == req.headers['x-forwarded-proto']) {
     next();
   } else {
     var url = "https://" + req.headers['host'] + req.url;
